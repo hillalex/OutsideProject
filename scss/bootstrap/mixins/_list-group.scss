@@ -4,23 +4,29 @@
   .list-group-item-#{$state} {
     color: $color;
     background-color: $background;
+
+    // [converter] extracted a&, button& to a.list-group-item-#{$state}, button.list-group-item-#{$state}
   }
 
-  //scss-lint:disable QualifyingElement
   a.list-group-item-#{$state},
   button.list-group-item-#{$state} {
     color: $color;
 
-    @include hover-focus {
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    &:hover,
+    &:focus {
       color: $color;
       background-color: darken($background, 5%);
     }
-
-    &.active {
+    &.active,
+    &.active:hover,
+    &.active:focus {
       color: #fff;
       background-color: $color;
       border-color: $color;
     }
   }
-  // scss-lint:enable QualifyingElement
 }

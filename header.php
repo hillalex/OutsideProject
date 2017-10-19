@@ -8,29 +8,42 @@
     <link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/style.css"/>
 </head>
 
-<body class="d-flex flex-column">
+<body>
 
-<header class="sticky-top header-main pb-2 mb-5">
-    <div class="container-fluid exit-info d-none d-sm-block float-right">
-        <span class="float-right">
+<header class="header-main navbar-fixed-top navbar">
+    <div class="container-fluid exit-info hidden-xs">
+        <span class="pull-right">
         If you need to leave this website quickly, click the purple 'Quick Exit' button below or press the escape key.
         </span>
     </div>
-    <nav class="navbar navbar-expand pr-md-5 pl-md-5 mt-2" role="navigation">
-        <a class="navbar-brand mb-4" href="/"><img
-                    src="<?php bloginfo( 'template_directory' ); ?>/images/logo_small.png"
-                    alt="The UK's first LGBTQI+ homeless/crisis winter shelter"/></a>
-        <div class="navbar-main">
-            <ul class="navbar-nav">
-				<?php wp_nav_menu( array(
-					'theme_location' => 'top-menu',
-					'container'      => '',
-					'items_wrap'     => '%3$s'
-				) ); ?>
-            </ul>
-        </div>
-    </nav>
 
+    <nav class="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img
+                            src="<?php bloginfo( 'template_directory' ); ?>/images/logo_small.png"
+                            alt="The UK's first LGBTQI+ homeless/crisis winter shelter"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-main collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+		            <?php wp_nav_menu( array(
+			            'theme_location' => 'top-menu',
+			            'container'      => '',
+			            'items_wrap'     => '%3$s'
+		            ) ); ?>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 </header>
 
-<div class="container flex-grow">
+<div class="container">

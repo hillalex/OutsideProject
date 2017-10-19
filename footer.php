@@ -1,8 +1,8 @@
 </div>
-<footer class="p-4 mt-5">
+<footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12"> © 2017 The Outside Project.
+            <div class="col-lg-12"> © <?php echo date("Y") ?> The Outside Project.
                 <span class="pull-right hidden-xs">
                         Colleagues, friends and activists creating a free, independent grassroots project.</span>
             </div>

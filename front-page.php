@@ -3,13 +3,9 @@ get_header();
 
 get_template_part( "banner-home" )
 ?>
-    <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10">
-            <h2>Latest updates</h2>
-        </div>
-    </div>
-    <div class="row justify-content-md-center">
-        <div class="col-12 col-md-10">
+
+    <div class="row">
+        <div class="col-sm-9 col-md-8 col-xs-12">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -34,6 +30,9 @@ get_template_part( "banner-home" )
 			?>
 
         </div>
+    <div class="col-sm-3 col-lg-offset-1 hidden-xs">
+	    <?php get_template_part("social-sidebar"); ?>
+    </div>
     </div>
 
 <?php get_footer(); ?>

@@ -9,12 +9,14 @@ Version: 1.0
 @import "footer.scss";
 @import "header.scss";
 @import "news.scss";
+@import "social.scss";
 
 body {
+  padding-top: 210px;
   font-size: 20px;
   min-height: 100vh;
 }
 
-.flex-grow {
-  flex: 1;
+.banner{
+  margin-bottom: 40px;
 }
