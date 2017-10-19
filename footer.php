@@ -45,6 +45,14 @@
 
     (function($) {
 
+        $(".navbar-nav > li").on("mouseover", function(){
+            $(this).addClass("open")
+        });
+
+        $(".navbar-nav > li").on("mouseout", function(){
+            $(this).removeClass("open")
+        });
+
         $(".navbar-nav li a").last() // quick exit menu item
             .click(quickExit);
 
