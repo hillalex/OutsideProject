@@ -12,9 +12,21 @@ Version: 1.0
 @import "social.scss";
 
 body {
-  padding-top: 210px;
   font-size: 20px;
+  padding-top: 210px;
   min-height: 100vh;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    padding-top: 400px;
+  }
+
+  @media only screen and (min-width: $screen-md-min) {
+    padding-top: 300px;
+  }
+
+  @media only screen and (min-width: $screen-lg-min) {
+    padding-top: 210px;
+  }
 }
 
 .banner{

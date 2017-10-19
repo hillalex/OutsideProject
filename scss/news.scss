@@ -1,8 +1,13 @@
 .date {
   font-size: 16px;
-  color: $gray-dark;
+  color: $gray;
+  margin-bottom: 5px;
 }
 
 .news-bite {
   padding: 10px;
+
+  a {
+    overflow-wrap: break-word;
+  }
 }

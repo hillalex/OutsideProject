@@ -2,8 +2,11 @@
 get_header();
 ?>
 
-    <div class="row justify-content-md-center mb-5">
-        <div class="col">
+    <div class="row">
+        <div class="col-md-4 hidden-sm">
+			<?php get_template_part( "social-sidebar" ); ?>
+        </div>
+        <div class="col-md-8 col-sm-12">
 
 			<?php if ( have_posts() ) : ?>
 

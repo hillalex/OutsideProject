@@ -1,20 +1,52 @@
-.exit-info{
+.exit-info {
   background: $gray-lighter;
   padding: 5px;
 }
 
-.header-main{
+.header-main {
   background: #fff;
   border-bottom: 4px solid $hot-pink;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
+}
+
+.header-menu {
+    padding-top: 20px;
+
+    @media only screen and (min-width: $screen-sm-min) {
+      padding-top: 40px
+    }
+  }
+
+.navbar-toggle {
+
+  margin-top: 24px;
+  margin-bottom: 0;
+  border: 4px solid $hot-pink;
+
+  .icon-bar {
+    margin: 5px;
+    padding: 1px;
+    background: $hot-pink;
+  }
+
+}
+
+.navbar-brand {
+  height: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media only screen and (min-width: $screen-sm-min) {
+    margin-top: -20px;
+  }
 }
 
 .navbar-main {
 
   @extend .navbar-collapse;
 
-  padding-top: 40px;
+  &.in {
+    margin-right: -5px;
+  }
 
   //margin: 0 auto;
   //justify-content: center;
@@ -35,7 +67,7 @@
         border: 4px solid;
         padding: 0;
 
-        &:hover{
+        &:hover {
           background: #fff;
         }
       }
@@ -49,9 +81,9 @@
       }
     }
 
-    $rainbow-length : length($rainbow);
+    $rainbow-length: length($rainbow);
 
-    li:nth-child(#{$rainbow-length}n+#{$rainbow-length}){
+    li:nth-child(#{$rainbow-length}n+#{$rainbow-length}) {
       a {
         background: nth($rainbow, $rainbow-length);
         border-color: nth($rainbow, $rainbow-length);

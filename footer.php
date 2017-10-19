@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12"> © <?php echo date("Y") ?> The Outside Project.
-                <span class="pull-right hidden-xs">
+                <span class="pull-right hidden-md">
                         Colleagues, friends and activists creating a free, independent grassroots project.</span>
             </div>
         </div>
@@ -13,6 +13,8 @@
 <?php wp_footer(); ?>
 
 <?php wp_enqueue_script("jquery", false, true, true, true); ?>
+
+<script src="<?php bloginfo( 'template_directory' ); ?>/js/collapse.js"></script>
 
 <script type="text/javascript">
 

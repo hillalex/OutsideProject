@@ -4,8 +4,12 @@ get_header();
 get_template_part( "banner-home" )
 ?>
 
+
     <div class="row">
-        <div class="col-sm-9 col-md-8 col-xs-12">
+        <div class="col-md-4 hidden-sm">
+			<?php get_template_part( "social-sidebar" ); ?>
+        </div>
+        <div class="col-md-8 col-sm-12">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -16,7 +20,7 @@ get_template_part( "banner-home" )
 					?>
                     <div class="news-bite">
                         <h3><?php the_title(); ?></h3>
-                        <div class="date mb-2"> <?php echo get_the_date('l, F j, Y'); ?></div>
+                        <div class="date"> <?php echo get_the_date( 'l, F j, Y' ); ?></div>
 						<?php the_content(); ?>
                     </div>
 
@@ -30,9 +34,6 @@ get_template_part( "banner-home" )
 			?>
 
         </div>
-    <div class="col-sm-3 col-lg-offset-1 hidden-xs">
-	    <?php get_template_part("social-sidebar"); ?>
-    </div>
     </div>
 
 <?php get_footer(); ?>

@@ -18,7 +18,7 @@
     </div>
 
     <nav class="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid header-menu">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -33,7 +33,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-main collapse navbar-collapse pull-right" id="navbar-collapse-1">
+            <div class="navbar-main collapse pull-right" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
 		            <?php wp_nav_menu( array(
 			            'theme_location' => 'top-menu',
@@ -45,5 +45,4 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
-
 <div class="container">
